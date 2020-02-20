@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Band</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="screen-reader screen-reader-focusable" href="mailto:nowhere@gmail.com?subject=Band-flex%20Accessibility%20Feedback">Accessibility Feedback</a>
+    <a class="screen-reader screen-reader-focusable" id="to-content" href="#band">Skip to main content</a>
+    <header class="header">
+      <div class="header-wrap">
+        <div class="brand">
+          <h1 class="site-title">Band</h1>
+
+          <button class="nav-toggler" id="nav-toggler" type="button" aria-controls="main-nav" aria-expanded="false">
+            <span class="fa fa-bars" aria-hidden="true"></span>
+            <span class="screen-reader">Expand Navigation</span>
+          </button><!-- .nav-toggler -->
+        
+          <nav class="main-nav" id="main-nav">
+            <ul>
+              <li class="active">
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#band">Band</a>
+              </li>
+              <li>
+                <a href="#tours">Tour</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+              <li>
+                <a href="#blog">Blog</a>
+              </li>
+              <li class="has-children">
+                <a href="#" id="more-dropdown" aria-haspopup="true" aria-expanded="false">More
+                  <span class="fas fa-caret-down" aria-hidden="true"></span>
+                </a><!-- #more-dropdown -->
+                <ul class="dropdown-menu" id="dropdown-menu" aria-lebelledby="more-dropdown">
+                  <li><a class="dropdown-link" href="#">Careers</a></li>
+                  <li><a class="dropdown-link" href="#">Multimedia</a></li>
+                  <li><a class="dropdown-link" href="#">Events</a></li>
+                </ul><!-- .dropdown-menu -->
+              </li><!-- .has-children -->
+              <li>
+                <a href="#" id="search-link" aria-controls="nav-form" aria-expanded="false">
+                  <span class="search-icon fas fa-search" id="search-icon" aria-hidden="true"></span>
+                  <span class="screen-reader">Toggle Site Search</span>
+                </a><!-- #search-link -->
+              </li>
+            </ul>
+          </nav><!-- .main-nav -->
+        </div><!-- .brand -->
+      </div><!-- .header-wrap -->
+      <div class="nav-form" id="nav-form">
+        <form class="nav-form-wrap" action="" method="post">
+          <input class="form-control search-input" type="text" placeholder="Search..." name="site-search">
+          <input class="site-btn search-btn" type="submit" value="Go">
+        </form><!-- .nav-form-wrap -->
+      </div><!-- .nav-form -->
+    </header><!-- .header -->
+
+    <main class="main" id="main">
+      <section>
+        <div class="flexslider" id="home">
+          <ul class="slides">
+            <li>
+              <img src="images/c.jpg" alt="">
+            </li>
+
+            <li>
+              <img src="images/b.jpg" alt="">
+              <div class="flex-caption">
+                <h2>New York</h2>
+                <p>The atmosphere in new york is lorem ipsum.</p>
+              </div>
+            </li>
+
+            <li>
+              <img src="images/d.jpg" alt="">
+            </li>
+          </ul><!-- .slides -->
+        </div><!-- .flexslider, #home -->
+      </section>
+
+      <section class="content-wrap" id="band">
+        <div class="intro">
+          <h2 class="main-title" id="d-band">The Band</h2>
+          <p>We love music!</p>
+          <p id="para-g">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum.</p>
+          
+          <div class="intro-body">
+            <section class="member">
+              <h3>Eric Joe</h3>
+              <a href="#">
+                <img class="member-img" src="images/ee.jpg" alt="">
+              </a>
+            </section><!-- .member -->
+
+            <section class="member">
+              <h3>Becky Tiger</h3>
+              <a href="#">
+                <img class="member-img" src="images/g.jpg" alt="">
+              </a>                            
+            </section><!-- .member -->
+
+            <section class="member">
+              <h3>Evans Jose</h3>
+              <a href="#">
+                <img class="member-img" src="images/ggg.jpg" alt="">
+              </a>                          
+            </section><!-- .member -->
+          </div><!-- .intro-body -->
+        </div><!-- .intro -->
+      </section><!-- .content-wrap, #band -->
+
+      <section class="tours" id="tours">
+        <div class="content-wrap">
+          <h2 class="main-title">Tour Dates</h2>
+          <p>Lorem ipsum we'll play you some cool music.</p>
+          <p>Remember to book your tickets!</p>
+
+          <ul class="tours-dates">
+            <li>Feburary
+              <span class="badge booked">sold out</span>
+            </li>
+            <li>March
+              <span class="badge avail">45</span>
+            </li>
+            <li>April
+              <span class="badge avail">80</span>
+            </li>
+          </ul><!-- .tours-dates -->
+
+          <div class="tours-body">
+            <section class="tour">
+              <div class="tour-wrap">
+                <img class="tour-img" src="images/newyork.jpg" alt="">
+                <h3 class="tour-title">New York</h3>
+                <p>Friday 7th Feburary, 2020</p>
+                <a class="site-btn" href="#">Buy Tickets</a>
+              </div><!-- .tour-wrap -->
+            </section><!-- .tour -->
+
+            <section class="tour">
+              <div class="tour-wrap">
+                <img class="tour-img" src="images/paris.jpg" alt="">
+                <h3 class="tour-title">Paris</h3>
+                <p>Sunday 15th March, 2020</p>
+                <a class="site-btn" href="#">Buy Tickets</a>
+              </div><!-- .tour-wrap -->
+            </section><!-- .tour -->
+
+            <section class="tour">
+              <div class="tour-wrap">
+                <img class="tour-img" src="images/san.jpg" alt="">
+                <h3 class="tour-title">San Francisco</h3>
+                <p>Saturday 25th April, 2020</p>
+                <a class="site-btn" href="#">Buy Tickets</a>
+              </div><!-- .tour-wrap -->
+            </section><!-- .tour -->
+          </div><!-- .tours-body -->
+        </div><!-- .content-wrap-->
+      </section><!-- .tours -->
+
+      <section class="content-wrap" id="contact">
+        <h2 class="main-title">Get in Touch!</h2>
+        <div class="contact-body">
+          <section class="fan-note">
+            <h3 class="sub-title">Fan? Drop a note.</h3>
+            <p>We like to here from you</p>
+
+            <form action="" method="post">
+              <div class="form-flex">
+                <div>
+                  <label class="screen-reader" for="v-name">Name</label>
+                  <input class="form-control" type="text" name="v-name" id="v-name" placeholder="Name">
+                </div>
+
+                <div>
+                  <label class="screen-reader" for="v-email">Email</label>
+                  <input class="form-control" type="email" name="v-email" id="v-email" placeholder="Email">
+                </div>
+              </div><!-- .form-flex -->
+
+              <label class="screen-reader" for="v-comment">Let's have your comment</label>
+              <div>
+                <textarea class="form-control" name="name" rows="6" cols="50" placeholder="Comment" id="v-comment"></textarea>
+              </div>
+
+              <input class="site-btn" type="submit" value="Submit Comment">
+            </form>
+          </section><!-- .fan-note -->
+
+          <aside class="ads">
+            <h3>Advertisement:</h3>
+            <a href="#">
+              <img src="images/ads.jpg" alt="">
+            </a>
+            <p>Photo by
+              <a href="//unsplash.com/@willfrancis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Will Francis</a> on
+              <a href="https://unsplash.com/s/photos/advertisement?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+          </aside><!-- .ads -->
+        </div><!-- .contact-body -->
+      </section><!-- .content-wrap -->
+
+      <aside class="content-wrap" id="blog">
+        <h2 class="main-title">From The Blog</h2>
+        <ul class="nav-tabs" id="blogTab" role="tablist">
+          <li>
+            <a href="#peter-tabpanel" id="peter-tab" role="tab" aria-controls="peter-tabpanel" aria-selected="true">Peter</a>
+          </li>
+          <li>
+            <a href="#joy-tabpanel" id="joy-tab" role="tab" aria-controls="joy-tabpanel" aria-selected="true">Joy</a>
+          </li>
+          <li>
+            <a href="#glory-tabpanel" id="glory-tab" role="tab" aria-controls="glory-tabpanel" aria-selected="true">Glory</a>
+          </li>
+        </ul><!-- .nav-tabs -->
+
+        <div class="blogs" id="blogTabContent">
+          
+          <section class="blog" id="peter-tabpanel" role="tabpanel" aria-labelledby="peter-tab">
+            <h3 class="sub-title">Peter Ette, Manager</h3 class="sub-title">
+            <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>        
+          </section><!-- .blog -->
+
+          <section class="blog" id="joy-tabpanel" role="tabpanel"aria-labelledby="joy-tab">
+            <h3 class="sub-title">Joy Davis, Lyricist</h3>
+            <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>        
+          </section><!-- .blog -->
+
+          <section class="blog" id="glory-tabpanel" role="tabpanel"aria-labelledby="glory-tab">
+            <h3 class="sub-title">Glory Elton, Drummer</h3>
+            <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>        
+          </section><!-- .blog -->
+        </div><!-- .blogs -->
+      </aside><!-- .content-wrap -->
+    </main>
+
+    <footer class="footer">
+      <div class="content-wrap">
+        <div class="footer-body">
+          <section>
+            <h4>About</h4>
+            <div class="footer-nav">
+              <a href="#">Mission</a>
+              <a href="#">Resources</a>
+              <a href="#">Supporters</a>
+              <a href="#">Careers</a>
+            </div><!-- .footer-nav -->
+          </section>
+
+          <section>
+            <h4>Explore</h4>
+            <div class="footer-nav">
+              <a href="#">Hightlights</a>
+              <a href="#">Profiles</a>
+              <a href="#">Projects</a>
+              <a href="#">Events</a>
+            </div><!-- .footer-nav -->
+          </section>
+
+          <section class="features">
+            <h4>Features</h4>
+            <div class="footer-nav">
+              <a href="#">Snapshots</a>
+              <a href="#">Recordings</a>
+              <a href="#">Testing</a>
+              <a href="#">Multimedia</a>
+            </div><!-- .footer-nav -->
+          </section>
+      
+          <section class="contact-address">
+            <address>
+              <h4>Band</h4>
+              <p>Sunwalk Avenue<br>
+                SUN, Band<br>
+                Chicago,<br>
+                US
+              </p>
+            </address>
+            
+            <a href="https://www.facebook.com" target="_blank">
+              <span class="fab fa-facebook-f" aria-hidden="true"></span>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <span class="fab fa-twitter" aria-hidden="true"></span>
+              <span class="sr-only">Twitter</span>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+              <span class="fab fa-linkedin-in" aria-hidden="true"></span>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          </section><!-- .contact-address -->
+        </div><!-- .footer-body -->
+    
+        <div class="made-by">
+          <p>
+            Made with
+            <span class="fas fa-heart heart-icon" aria-hidden="true"></span>
+            <span class="sr-only">love</span>
+            by
+            <a class="tooltip" href="https://github.com/davidoluseun" target="_blank">AOD
+              <span class="tooltip-text">David Oluseun</span>
+            </a>
+          </p>
+        </div><!-- .made-by -->
+      </div><!-- .content-wrap -->
+    </footer><!-- .footer -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
